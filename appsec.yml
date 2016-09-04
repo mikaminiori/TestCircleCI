@@ -1,0 +1,10 @@
+version: 0.0
+os: linux
+
+files:
+ -sourse: sample.txt
+
+hooks:
+ AfterInstall:
+  -location: Scripts/AfterInstall.sh
+   timeout: 60
