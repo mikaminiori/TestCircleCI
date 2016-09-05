@@ -14,7 +14,7 @@ deployment:
       bucket: testcodedeploybucket
       key_pattern: testcodedeploybucket-{BRANCH}-{SHORT_COMMIT}
     deployment_group: testdeploy
-    deployment_config: CodeDeployDefault.AllAtOnce
+    deployment_config: CodeDeployDefault.OneAtATime
  production:
   branch: master
   codedeploy:
@@ -27,5 +27,5 @@ deployment:
       bucket: testcodedeploybucket
       key_pattern: testcodedeploybucket-{BRANCH}-{SHORT_COMMIT}
     deployment_group: testdeploy
-    deployment_config: CodeDeployDefault.AllAtOnce
+    deployment_config: CodeDeployDefault.OneAtATime
 
