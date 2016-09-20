@@ -11,8 +11,8 @@ deployment:
     revision_location:
      revision_type: S3
      s3_location:
-      bucket: testcodedeploybucket
-      key_pattern: testcodedeploybucket-{BRANCH}-{SHORT_COMMIT}
+      bucket: testcirclecibucket
+      key_pattern: testcirclecibucket-{BRANCH}-{SHORT_COMMIT}
     deployment_group: testdeploy
     deployment_config: CodeDeployDefault.OneAtATime
  production:
