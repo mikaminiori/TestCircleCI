@@ -3,7 +3,7 @@ os: linux
 
 files:
  - sourse: sample.txt
-   destination: /
+   destination: /opt/src
 
 hooks:
  AfterInstall:
