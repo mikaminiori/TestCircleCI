@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 
 files:
- - sourse: sample.txt
+ - sourse: /
    destination: /opt/src
 
 hooks:
