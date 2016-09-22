@@ -7,4 +7,4 @@ files:
 hooks:
  AfterInstall:
   -location: Scripts/AfterInstall.sh
-  -timeout: 60
+ # -timeout: 60
