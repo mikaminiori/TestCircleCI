@@ -3,6 +3,7 @@ os: linux
 
 files:
  -sourse: sample.txt
+  destination: /
 
 hooks:
  AfterInstall:
