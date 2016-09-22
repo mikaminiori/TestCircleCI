@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 
 files:
- - sourse: /
+ - source: /
    destination: /home/ec2-user
 
 hooks:
