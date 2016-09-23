@@ -15,6 +15,7 @@ deployment:
       key_pattern: testcirclecibucket-{BRANCH}-{SHORT_COMMIT}
     deployment_group: testdeploy
     deployment_config: CodeDeployDefault.OneAtATime
+    
  production:
   branch: master
   codedeploy:
