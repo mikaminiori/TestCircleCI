@@ -1,0 +1,31 @@
+test:
+ override:
+  - exit 0
+deployment:
+ staging:
+  branch: staging
+  codedeploy:
+   testCodedeploy:
+    application_root: /
+    region: ap-northeast-1
+    revision_location:
+     revision_type: S3
+     s3_location:
+      bucket: testcirclecibucket
+      key_pattern: testcirclecibucket-{BRANCH}-{SHORT_COMMIT}
+    deployment_group: testdeploy
+    deployment_config: CodeDeployDefault.OneAtATime
+ production:
+  branch: master
+  codedeploy:
+   testCodedeploy:
+    application_root: /
+    region: ap-northeast-1
+    revision_location:
+     revision_type: S3
+     s3_location:
+      bucket: testcodedeploybucket
+      key_pattern: testcodedeploybucket-{BRANCH}-{SHORT_COMMIT}
+    deployment_group: testdeploy
+    deployment_config: CodeDeployDefault.OneAtATime
+
